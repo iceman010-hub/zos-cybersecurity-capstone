@@ -49,4 +49,4 @@ The full proposal package is one PDF: [`ZOS_Cybersecurity_Proposal.pdf`](ZOS_Cyb
 
 ## About me
 
-I'm an IT System Administrator currently and finished my AAS in Cybersecurity at Dallas College in May 2026. Find me on [LinkedIn](https://www.linkedin.com/in/noevalencia).
+I'm an IT System Administrator currently and finished my AAS in Cybersecurity at Dallas College. Find me on [LinkedIn](https://www.linkedin.com/in/noevalencia).
