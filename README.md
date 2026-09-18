@@ -18,7 +18,7 @@ ZOS runs satellite command and control out of a primary ground station in Dallas
 
 **Redesigned the network.** Full hardware refresh with enterprise gear. Palo Alto NGFW in an HA pair, Cisco Catalyst core and access switching, Meraki Wi-Fi 6E, segmented VLANs, a proper DMZ, and Zscaler Zero Trust Network Access replacing traditional VPN to kill the lateral movement risk.
 
-**Wrote the policy suite.** Five policies following SANS template methodology: Server Vulnerability Management, Password Protection, Network Device Management, Application/CSP Management, and an overarching Cybersecurity Management Plan.
+**Wrote the policy suite.** Four policies following SANS template methodology: Password Protection, Server Vulnerability Management, Network Device Management, and Cloud Service Provider Management, under an overarching Cybersecurity Management Plan.
 
 **Documented the plans.** A full Incident Response Plan with an IRT structure and a P1 to P5 severity model, plus a Business Continuity Plan built around ground to space link redundancy and failover to the Austin hub.
 
@@ -41,7 +41,37 @@ The redesign moved the network from a CSET Security Level of LOW to MODERATE/HIG
 
 ## Frameworks and tools
 
-CISA CSET, NIST CSF 2.0, NIST SP 800-207, CISA Zero Trust Maturity Model 2.0, MITRE ATT&CK, and SANS policy templates. The risk work uses Defense in Depth Index and Business Risk Profile scoring across infrastructure, applications, operations, and people.
+Everything here traces to a published framework rather than invented controls, so each
+requirement has a source behind it.
+
+**Core frameworks**
+
+- **NIST Cybersecurity Framework 2.0** — all six functions: Govern, Identify, Protect, Detect, Respond, Recover
+- **CISA Cyber Security Evaluation Tool (CSET)** — assessment execution and gap analysis
+- **MITRE ATT&CK Enterprise** — threat modeling and detection mapping
+- **NIST SP 800-207** — Zero Trust Architecture
+- **CISA Zero Trust Maturity Model 2.0** — maturity scoring across the five pillars
+- **CIS Controls v8** — Implementation Group 2 coverage
+- **NIST SP 800-53** — control selection
+- **NIST SP 800-61** — incident handling lifecycle
+- **SANS Institute template methodology** — policy development
+
+**Compliance and regulatory context**
+
+- **CMMC Level 2** — the 110 practices from NIST SP 800-171, relevant given the defense clients
+- **ISO/IEC 27001**, **SOC 2**, and **PCI DSS** — vendor and CSP assurance requirements
+- **FedRAMP** — cloud service provider tiering and authorization
+- **GDPR** and **HIPAA** — data handling obligations
+
+**Risk methodology**
+
+Defense in Depth Index and Business Risk Profile scoring across infrastructure,
+applications, operations, and people, with the Verizon DBIR used for threat baselines.
+
+**Reference architecture**
+
+Palo Alto NGFW, Cisco Catalyst, Meraki Wi-Fi 6E, Zscaler ZTNA, Splunk Enterprise SIEM,
+Huntress Managed EDR, Qualys VM, Okta, CyberArk PAM, Veeam, and KnowBe4.
 
 ## The package
 
@@ -94,4 +124,15 @@ which carry their own terms.
 
 ## About me
 
-I'm an IT System Administrator currently and finished my AAS in Cybersecurity at Dallas College. Find me on [LinkedIn](https://www.linkedin.com/in/noevalencia).
+I'm an IT System Administrator with an AAS in Cybersecurity from Dallas College. My
+day to day is network and systems work, and this project is where I put the security
+side of it together end to end.
+
+What I wanted to show here is the whole arc, not any single artifact. Assess first with
+a real tool against a real framework, let the findings drive the design instead of
+picking products and working backwards, then write the policies and plans that keep it
+running and prove the spend is justified. The part I care about most isn't the page
+count, it's the second CSET assessment. Running the tool again on the redesign is what
+turns "this should be more secure" into a measured result.
+
+Find me on [LinkedIn](https://www.linkedin.com/in/noevalencia).
