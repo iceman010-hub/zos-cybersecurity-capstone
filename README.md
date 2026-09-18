@@ -43,9 +43,9 @@ The redesign moved the network from a CSET Security Level of LOW to MODERATE/HIG
 
 CISA CSET, NIST CSF 2.0, NIST SP 800-207, CISA Zero Trust Maturity Model 2.0, MITRE ATT&CK, and SANS policy templates. The risk work uses Defense in Depth Index and Business Risk Profile scoring across infrastructure, applications, operations, and people.
 
-## What's in the repo
+## The package
 
-The deliverable is the full proposal package, one 119 page PDF:
+The complete proposal is one 119 page document:
 **[`ZOS_Cybersecurity_Proposal.pdf`](ZOS_Cybersecurity_Proposal.pdf)**
 
 | Pages | Section |
@@ -55,43 +55,42 @@ The deliverable is the full proposal package, one 119 page PDF:
 | 18–19 | Physical security and the AZTOF framework |
 | 20–28 | Risk assessment, CSET before/after comparison, top five findings, three priority threats |
 | 29–42 | CSET assessment narrative (baseline February 20, 2026 and redesign February 23, 2026) |
-| 43–48 | Finance and pricing, professional services, grand total and financing |
-| 47–48 | Five year total cost of ownership |
-| 49–51 | Cybersecurity Management Plan and the six AZTOF domains applied to ZOS |
-| 52–55 | Business continuity and incident response summaries |
+| 43–48 | Finance and pricing, professional services, five year total cost of ownership |
+| 49–55 | Management plan, business continuity and incident response summaries |
 | 57–80 | The four policies in full |
 | 81–92 | Incident Response Plan |
 | 93–101 | Cybersecurity Management Plan |
-| 102–119 | IT Department Business Continuity Plan |
+| 102–114 | IT Department Business Continuity Plan |
+| 115–119 | Appendices A–E, network diagrams and floor plan |
 
-### Source deliverables
+### Individual documents
 
-These are the individual documents I wrote across the course, before I pulled
-them together and rebranded them for the ZOS scenario. The master PDF above is
-the integrated version. These are here so a specific policy or plan can be read
-on its own without scrolling 119 pages. They use generic organization naming
-rather than ZOS.
+The same package, split so any one document can be read on its own. Each is
+lifted straight from the pages above, so nothing here diverges from the master.
 
 ```
+design/
+  network-design.pdf                              Unified network system design and topology
 policies/
-  password-protection-policy.pdf              SANS Password Construction Standard
-  server-vulnerability-management-policy.pdf  scanning cadence, remediation SLAs, pen testing
-  network-device-management-policy.pdf        inventory, secure mgmt access, firmware lifecycle
-  application-csp-management-policy.pdf       CSP onboarding, tiering, offboarding
+  password-protection-policy.pdf                  Length, screening, rotation, MFA, lockout
+  server-vulnerability-management-policy.pdf      Scanning cadence, remediation SLAs, pen testing
+  network-device-management-policy.pdf            Inventory, secure mgmt access, firmware lifecycle
+  cloud-service-provider-management-policy.pdf    CSP onboarding, data tiering, offboarding
 plans/
-  incident-response-plan.pdf                  IRT structure, P1–P5 severity model
-  cybersecurity-management-plan.pdf           AZTOF framework definition
+  incident-response-plan.pdf                      IRT structure, P1–P5 severity model
+  cybersecurity-management-plan.pdf               AZTOF framework and its six domains
+  business-continuity-plan.pdf                    Recovery team, phases, Austin failover
 budget/
-  cybersecurity-budget-proposal.pdf           line item pricing and five year TCO
+  cybersecurity-budget.pdf                        Line item pricing and five year TCO
 diagrams/
-  network-diagram.pdf                         physical network and security topology
+  network-diagrams.pdf                            Appendices A–E, before/after and floor plan
 ```
 
 ## Using this
 
-See [LICENSE](LICENSE). Short version: read it, share it, reference it with
-attribution, don't submit it as your own coursework. The policies adapt SANS and
-CRF templates, which carry their own terms.
+See [LICENSE](LICENSE). Read it, share it, reference it with attribution, don't
+submit it as your own coursework. The policies adapt SANS and CRF templates,
+which carry their own terms.
 
 ## About me
 
