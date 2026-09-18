@@ -45,7 +45,53 @@ CISA CSET, NIST CSF 2.0, NIST SP 800-207, CISA Zero Trust Maturity Model 2.0, MI
 
 ## What's in the repo
 
-The full proposal package is one PDF: [`ZOS_Cybersecurity_Proposal.pdf`](ZOS_Cybersecurity_Proposal.pdf). It covers the network design, physical security, the AZTOF framework, the CSET assessment narrative, risk analysis, all five policies, the IRP, the BCP, and the full budget.
+The deliverable is the full proposal package, one 119 page PDF:
+**[`ZOS_Cybersecurity_Proposal.pdf`](ZOS_Cybersecurity_Proposal.pdf)**
+
+| Pages | Section |
+|-------|---------|
+| 11–12 | Executive summary and introduction |
+| 12–17 | Unified network system design, physical and wireless topology |
+| 18–19 | Physical security and the AZTOF framework |
+| 20–28 | Risk assessment, CSET before/after comparison, top five findings, three priority threats |
+| 29–42 | CSET assessment narrative (baseline February 20, 2026 and redesign February 23, 2026) |
+| 43–48 | Finance and pricing, professional services, grand total and financing |
+| 47–48 | Five year total cost of ownership |
+| 49–51 | Cybersecurity Management Plan and the six AZTOF domains applied to ZOS |
+| 52–55 | Business continuity and incident response summaries |
+| 57–80 | The four policies in full |
+| 81–92 | Incident Response Plan |
+| 93–101 | Cybersecurity Management Plan |
+| 102–119 | IT Department Business Continuity Plan |
+
+### Source deliverables
+
+These are the individual documents I wrote across the course, before I pulled
+them together and rebranded them for the ZOS scenario. The master PDF above is
+the integrated version. These are here so a specific policy or plan can be read
+on its own without scrolling 119 pages. They use generic organization naming
+rather than ZOS.
+
+```
+policies/
+  password-protection-policy.pdf              SANS Password Construction Standard
+  server-vulnerability-management-policy.pdf  scanning cadence, remediation SLAs, pen testing
+  network-device-management-policy.pdf        inventory, secure mgmt access, firmware lifecycle
+  application-csp-management-policy.pdf       CSP onboarding, tiering, offboarding
+plans/
+  incident-response-plan.pdf                  IRT structure, P1–P5 severity model
+  cybersecurity-management-plan.pdf           AZTOF framework definition
+budget/
+  cybersecurity-budget-proposal.pdf           line item pricing and five year TCO
+diagrams/
+  network-diagram.pdf                         physical network and security topology
+```
+
+## Using this
+
+See [LICENSE](LICENSE). Short version: read it, share it, reference it with
+attribution, don't submit it as your own coursework. The policies adapt SANS and
+CRF templates, which carry their own terms.
 
 ## About me
 
